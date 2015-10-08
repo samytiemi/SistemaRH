@@ -11,9 +11,10 @@ package classes;
  */
 public class Funcionario extends Pessoa{
     
-    private String cargo, nivel, departamento, senha;
+    private String cargo, departamento, senha;
+    private int nivel;
 
-    public Funcionario(String cargo, String nivel, String departamento, String senha, String nome, String sobrenome, String rg, String cpf, String telefone) {
+    public Funcionario(String cargo, int nivel, String departamento, String senha, String nome, String sobrenome, String rg, String cpf, String telefone) {
         super(nome, sobrenome, rg, cpf, telefone);
         this.cargo = cargo;
         this.nivel = nivel;
@@ -29,11 +30,11 @@ public class Funcionario extends Pessoa{
         this.cargo = cargo;
     }
 
-    public String getNivel() {
+    public int getNivel() {
         return nivel;
     }
 
-    public void setNivel(String nivel) {
+    public void setNivel(int nivel) {
         this.nivel = nivel;
     }
 
