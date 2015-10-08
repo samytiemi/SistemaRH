@@ -12,7 +12,7 @@ package classes;
 public class Funcionario extends Pessoa{
     
     private String cargo, departamento, senha;
-    private int nivel;
+    private int id, nivel;
 
     public Funcionario(String cargo, int nivel, String departamento, String senha, String nome, String sobrenome, String rg, String cpf, String telefone) {
         super(nome, sobrenome, rg, cpf, telefone);
@@ -52,5 +52,13 @@ public class Funcionario extends Pessoa{
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
