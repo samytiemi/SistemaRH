@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class SistemaRH {
     
-    private DepartamentoDAO departamentoDAO;
+    private final DepartamentoDAO departamentoDAO;
 
     public SistemaRH() {
         departamentoDAO = new DepartamentoDAO();
