@@ -12,7 +12,11 @@ package classes;
  */
 public class Departamento {
     private String departamento;
-    private int id;
+    private long id;
+    
+    public Departamento() {
+        id = -1L;
+    }
 
     public Departamento(String departamento) {
         this.departamento = departamento;
@@ -26,13 +30,11 @@ public class Departamento {
         this.departamento = departamento;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
-    
-    
 }

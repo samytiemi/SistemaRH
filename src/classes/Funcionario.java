@@ -13,6 +13,7 @@ public class Funcionario extends Pessoa{
     
     private String cargo, departamento, senha;
     private int id, nivel;
+    private double salario;
 
     public Funcionario(String cargo, int nivel, String departamento, String senha, String nome, String sobrenome, String rg, String cpf, String telefone) {
         super(nome, sobrenome, rg, cpf, telefone);
@@ -56,5 +57,13 @@ public class Funcionario extends Pessoa{
     
     public int getId() {
         return id;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 }
